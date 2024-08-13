@@ -1,0 +1,15 @@
+from machine import Pin
+from utime import sleep
+
+print("Hello, ESP32!")
+
+turquoise_led = Pin(14, Pin.OUT)
+red_led = Pin(27, Pin.OUT)
+
+while True:
+  turquoise_led.on()
+  sleep(1)
+  red_led.on()
+  sleep(1)
+  turquoise_led.off()
+  red_led.off()
